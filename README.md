@@ -2,7 +2,9 @@
 This repository has the code, schematic, board. etc for the electronics of the glasses turntable kiosk display in Revel Digital warehouse 13.
 
 
-The glasses turntable electronics board (board) uses a ATmega8 microcontroller to controll a H bridge that controlls a brushed DC motor. The DC motor has a gear boc to slow the motor down and to increase torqu. The motor turns the whole display. 
+The glasses turntable electronics board (board) uses a ATmega8 microcontroller to controll a H bridge that controlls a brushed DC motor. The DC motor has a gear boc to slow the motor down and to increase torqu. The motor turns the whole display. The display is ran from a 12V dc source and is fused. All the logic on the board is running 5V.
+
+On the board there are connector for LEDs (12V LED string), power (2.1X5.5mm barrel jack center positive 12V), homing switch, extranal button (not used), mbrushed DC motor, serial, programmer conncetor, and fan (12V power out, not used). 
 
 The display will rotate when the board recives a serial command. There serial commands are sent by a display located need the glasses turntable. When the board recives a command it will return the same serial command back.
 
